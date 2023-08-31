@@ -5,15 +5,15 @@
 
 2. Необходимо установить Selenium
 Для этого необходимо ввести следующую оманду в терминале:
-```sh
+   ```sh
     pip install selenium
-```
+   ```
 
 3. Склонировать данный репозиторий к себе на устройство командой:
     ```sh
     git clone https://github.com/mackarovak/Avito-qa
     ```
-4. Перейти в папку test
+4. Перейти в папку qa_tasks
 5. Запустить файл main.py
     ```sh
     python test.py

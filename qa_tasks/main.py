@@ -10,6 +10,7 @@ driver = webdriver.Chrome()
 
 
 def add_product_to_favorites(product):
+    """Добавление объявления в избранное"""
     driver.get(product)
     add_to_favorites_button = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, '//*[@id="app"]/div/div[3]/div[1]/div/div[2]/div[3]/div[1]/div[1]/div/div[3]/div/div/div/div[1]/button/span'))
@@ -18,6 +19,7 @@ def add_product_to_favorites(product):
 
 
 def check_add_to_favorites():
+    """Проверка, что объявление отображается в избранном"""
     driver.get(url_favorites)
     favorite_check = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, '//*[@id="app"]/div/div[4]/div/div/favorite-items-list/div/div/div[1]/div[2]/div/div/div/div[1]/a/img'))
